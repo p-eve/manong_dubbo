@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/manong?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8665
+
+logging:
+  config: classpath:logback-dev.xml
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #将自已注册到eureka
+    register-with-eureka: true
+    #是否从EurakaServer抓取已有注册信息
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+
+mybatis-plus:
+  # 映射文件,这个决定的是mapper.xml的防止位置
+  mapper-locations: classpath:mapping/*.xml
+  #entity的映射位置
+  type-aliases-package: me.manong.user.entity
+  #日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# dubbo 协议
+dubbo:
+  application:
+    name: provider-questions
+  protocol:
+    id: dubbo
+    name: dubbo
+  # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848
+    register-mode: interface

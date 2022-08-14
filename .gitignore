@@ -1,0 +1,12 @@
+# Project exclude paths
+/api-app/target/
+/api-web/target/
+/common/target/
+/producer-questions/producer-questions-dao/target/
+/producer-questions/producer-questions-interface/target/
+/producer-questions/producer-questions-service/target/
+/producer-questions/producer-questions-starter/target/
+/producer-user/producer-user-dao/target/
+/producer-user/producer-user-interface/target/
+/producer-user/producer-user-service/target/
+/producer-user/producer-user-starter/target/

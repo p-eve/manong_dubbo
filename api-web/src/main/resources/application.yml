@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: api-web
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 5000ms
+
+server:
+  port: 8777
+
+swagger:
+  enable: true
+
+# dubbo 协议
+dubbo:
+  application:
+    name: api-web
+  protocol:
+    id: dubbo
+    name: dubbo
+    # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848?register-consumer-url=true
+    register-mode: interface

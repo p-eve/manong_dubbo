@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="producer-book-interface" />
+        <module name="producer-questions-starter" />
+        <module name="producer-user-dao" />
+        <module name="producer-note-starter" />
+        <module name="producer-book-dao" />
+        <module name="producer-user-starter" />
+        <module name="producer-note-service" />
+        <module name="producer-note-interface" />
+        <module name="producer-user-interface" />
+        <module name="producer-note-dao" />
+        <module name="producer-questions-service" />
+        <module name="producer-questions-interface" />
+        <module name="producer-questions-dao" />
+        <module name="producer-user-service" />
+        <module name="common" />
+        <module name="api-app" />
+        <module name="api-web" />
+        <module name="producer-book-starter" />
+        <module name="producer-book-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
