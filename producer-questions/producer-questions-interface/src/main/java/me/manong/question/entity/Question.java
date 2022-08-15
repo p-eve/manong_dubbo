@@ -49,4 +49,7 @@ public class Question implements Serializable {
     @TableField("comments")
     private int comments;
 
+    @TableField("content")
+    private String content;
+
 }

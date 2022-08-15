@@ -9,6 +9,7 @@ import me.manong.user.service.UserService;
 import me.manong.common.utils.Result;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,7 +37,7 @@ public class TestController {
     @GetMapping("/test")
     public Result<String> test(HttpServletRequest request){
         request.getSession().setAttribute("value", "app");
-        return Result.success("test");
+        return Result.success("vincent");
     }
 
     //获取session中的参数

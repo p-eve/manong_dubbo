@@ -3,7 +3,7 @@
 <mapper namespace="me.manong.question.mapper.QuestionMapper">
 
     <select id="getAllQuestion" resultType="me.manong.question.entity.Question">
-        select * from question;
+        select * from question order by id desc;
     </select>
 
 </mapper>

@@ -19,9 +19,14 @@ public class QuestionRequest {
 
     @ApiModelProperty(value="描述")
     @NotEmpty(message = "提问描述不能为空")
+    @Length( max = 300, message = "描述长度最大300")
     private String des;
 
 
     @ApiModelProperty(value="标签")
     private String tag;
+
+    @ApiModelProperty(value="内容")
+    @NotEmpty(message = "提问内容不能为空")
+    private String content;
 }
