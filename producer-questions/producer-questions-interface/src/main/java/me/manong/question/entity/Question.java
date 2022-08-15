@@ -52,4 +52,7 @@ public class Question implements Serializable {
     @TableField("content")
     private String content;
 
+    @TableField("img_str")
+    private String imgStr;
+
 }

@@ -29,4 +29,7 @@ public class QuestionRequest {
     @ApiModelProperty(value="内容")
     @NotEmpty(message = "提问内容不能为空")
     private String content;
+
+    @ApiModelProperty(value="图片地址")
+    private String imgStr;
 }
