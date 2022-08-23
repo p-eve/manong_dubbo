@@ -18,4 +18,10 @@ public interface AnswerService {
      * @return
      */
     public List<Answer> getAnswerByQuestion(Long questionId);
+
+    /**
+     * 修改提问回答
+     * @param answer
+     */
+    public void updateAnswer(Answer answer);
 }

@@ -29,4 +29,12 @@ public class AnswerServiceImpl implements AnswerService {
         queryWrapper.lambda().eq(Answer::getQuestionId,questionId);
         return this.answerMapper.selectList(queryWrapper);
     }
+
+    /**
+     * 修改提问回答
+     * @param answer
+     */
+    public void updateAnswer(Answer answer){
+        this.updateAnswer(answer);
+    }
 }
